@@ -1,1 +1,1 @@
-# odoo
+# odoo_base_dev
