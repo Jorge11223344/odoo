@@ -2,7 +2,7 @@
 
 services:
   db:
-    image: public.ecr.aws/docker/library/postgres:15
+    image: postgres:15
     container_name: odoo_db
     restart: always
     env_file:
@@ -21,7 +21,7 @@ services:
     networks: [odoo_net]
 
   odoo:
-    image: public.ecr.aws/docker/library/odoo:17
+    image: odoo:17
     container_name: odoo_app
     depends_on:
       db:
